@@ -33,6 +33,6 @@ class CountStore {
 
 }
 const obj = new CountStore();
- autorun(() => console.log(obj.list))
+//  autorun(() => console.log(obj.list))
 
 export default new CountStore()

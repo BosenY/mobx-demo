@@ -1,6 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import RouterList from './App'
+import RouterList from './routers'
 // import { AppContainer } from 'react-hot-loader'
 import registerServiceWorker from './registerServiceWorker';
 import './reset.css'

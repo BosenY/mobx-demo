@@ -11,6 +11,11 @@ export default class Add extends Component {
     this.state ={
       msg:''
     }
+    console.log(this.state)
+    console.log(this.props)
+  }
+  componentWillMount() {
+    
   }
   handleInput(e) {
   this.setState({msg: e.target.value});
@@ -32,10 +37,10 @@ handleKeyDown(e){
         <Button className="btn" size="small" onClick={()=> {this.props.CountStore.AddCount()}} type="primary">+</Button>
         <div>{this.props.CountStore.count}</div>
         <Button className="btn" size="small" onClick={()=> {this.props.CountStore.ReduceCount()}}  type="primary">-</Button>
-        <input  type="text" onInput={(e)=> this.handleInput(e)} onKeyDown={(e)=> this.handleKeyDown(e)} value={value}/>
+        <input  type="text" onInput={(e)=> this.handleInput(e)} onKeyDown={(e)=> {if(value!= ''){this.handleKeyDown(e)}}} value={value}/>
         <Button className="btn" size=""  type="primary" 
-        onClick={()=> {PushAXXX(value) 
-        this.setState({msg: ''})}}
+        onClick={()=> {if(value!= ''){PushAXXX(value) 
+        this.setState({msg: ''})} }}
         >push</Button>
         <span>[{list.map((item,index) => (
           <span>{item}{index == list.length -1 ? '':','}</span>
