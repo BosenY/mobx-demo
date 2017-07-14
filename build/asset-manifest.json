@@ -1,0 +1,23 @@
+{
+  "main.js": "static/js/main.e351a577.js",
+  "main.js.map": "static/js/main.e351a577.js.map",
+  "static/media/check-circle-o.svg": "static/media/check-circle-o.832ff1df.svg",
+  "static/media/check-circle.svg": "static/media/check-circle.85234955.svg",
+  "static/media/check.svg": "static/media/check.4e29f00a.svg",
+  "static/media/cross-circle-o.svg": "static/media/cross-circle-o.50fa4a02.svg",
+  "static/media/cross-circle.svg": "static/media/cross-circle.0499596d.svg",
+  "static/media/cross.svg": "static/media/cross.386b7998.svg",
+  "static/media/down.svg": "static/media/down.3531720c.svg",
+  "static/media/ellipsis-circle.svg": "static/media/ellipsis-circle.d4107a7c.svg",
+  "static/media/ellipsis.svg": "static/media/ellipsis.dcac1012.svg",
+  "static/media/exclamation-circle.svg": "static/media/exclamation-circle.7972237c.svg",
+  "static/media/info-circle.svg": "static/media/info-circle.159afecb.svg",
+  "static/media/koubei-o.svg": "static/media/koubei-o.54ecfaff.svg",
+  "static/media/koubei.svg": "static/media/koubei.f66ae400.svg",
+  "static/media/left.svg": "static/media/left.dfec4f9b.svg",
+  "static/media/loading.svg": "static/media/loading.8bd8cb59.svg",
+  "static/media/question-circle.svg": "static/media/question-circle.8495b322.svg",
+  "static/media/right.svg": "static/media/right.3ecfeac8.svg",
+  "static/media/search.svg": "static/media/search.93c48a7f.svg",
+  "static/media/up.svg": "static/media/up.e987c697.svg"
+}

@@ -6,33 +6,36 @@ import {
 } from 'mobx'
 
 class CountStore {
-    @observable
-    count = 0
-    list = []
-    
+    constructor() {
+    this.test()
+    }
+    @observable count = 0
+    @observable list = []
+
     @computed
     get aaa() {
         return this.count * this.count
     }
-    @action
-    AddCount = () => {
+
+    @action AddCount = () => {
         this.count++
     }
-
-    ReduceCount = () => {
+    @action ReduceCount = () => {
         this.count--
     }
-    PushAXXX = (xxx) => {
+    @action PushAXXX = (xxx) => {
         this.list.push(xxx)
     }
-    DeleteXXX = (index) => {
-        this.list.splice(index,1)
+    @action DeleteXXX = (index) => {
+        this.list.splice(index, 1)
     }
 
-
+  test = ()=> {
+    autorun(()=> {
+        if(this.list.length> 0) console.log(this.list.length)
+    })
+  }
 
 }
-const obj = new CountStore();
-//  autorun(() => console.log(obj.list))
 
 export default new CountStore()

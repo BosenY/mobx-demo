@@ -4,10 +4,8 @@ import {BrowserRouter as Router,Route,Switch} from 'react-router-dom'//导入的
 import { Provider } from 'mobx-react'
 import store from '../stores'
 import DevTools from 'mobx-react-devtools';
-import Add from '../pages/Add'
-import Other from '../pages/Other/'
-import Demo1 from '../pages/Demo1'
-import Demo2 from '../pages/Demo2'
+// import { initStore } from '../../serve.js'
+import { Add, Other, Demo1, Demo2, Demo3, Demo4, Demo5, TodoMvc } from '../pages'
 
 const zuhe =() => (
     <div>
@@ -42,6 +40,10 @@ const RouterList = () => (
                 <Route path="/add" component={zuhe}/>
                 <Route path="/demo1" component={Demo1}/>
                 <Route path="/demo2" component={Demo2}/>
+                <Route path="/demo3" component={Demo3}/>
+                <Route path="/demo4" component={Demo4}/>
+                <Route path="/demo5" component={Demo5}/>
+                <Route path="/todomvc" component={TodoMvc}/>
                 <Route component={NotFoundPage}/>
                 </Switch>
                 <DevTools></DevTools>
