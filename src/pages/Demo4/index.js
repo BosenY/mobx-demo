@@ -13,10 +13,15 @@ export default class  extends Component {
   }
   ClickSmall(e) {
     e.stopPropagation()
+    console.log(arguments)
     console.log('smallbtn is clicked !')
   }
-  ClickBlue() {
+  ClickBlue(num1,num2,num3) {
       console.log(this)
+      console.log(arguments)
+      console.log(num1)
+      console.log(num2)
+      console.log(num3)
       console.log('bluediv is clicked !')
   }
   ClickYellow() {
@@ -30,7 +35,7 @@ export default class  extends Component {
         <div className="bigbtn" onClick={this.ClickBig.bind(this,11)}>
             <div className="smallbtn" onClick={(e) => this.ClickSmall(e)}></div>
         </div>
-        <div className="blue" onClick={this.ClickBlue}></div>
+        <div className="blue" onClick={this.ClickBlue}>1</div>
         <div className="yellow" onClick={::this.ClickYellow}></div>
       </div>
     )

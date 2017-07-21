@@ -3,10 +3,12 @@ import './style.styl';
 import  { TodoInput, TodoList } from '../..//components/index'
 import {observer,inject} from "mobx-react"
 @inject('TodoStore')
+// @inject('CountStore')
 @observer
 export default class extends Component {
   constructor(props) {
     super(props)
+    console.log(this.props)
     this.state = {value: ''}
   }
   render() {

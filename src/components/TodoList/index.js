@@ -29,9 +29,9 @@ export default class extends Component {
       <div className="todolist">
         {
             todolist.map((item, index) => (
-                <div key={index} className={`${item.todo? 'todo' :'done'} todo-item-container`}>
+                <div key={index} className={` todo-item-container`}>
                     <div className="todo-item-toggle" onClick={this.toggle.bind(this,item, index)}>x</div>
-                    <div className="todo-item" > {item.text}</div>
+                    <div className={`todo-item ${item.todo? 'todo' :'done'}`}> {item.text}</div>
                     <div className="todo-item-delete" onClick={this.delete.bind(this, index)}>delete</div>
                 </div>
 

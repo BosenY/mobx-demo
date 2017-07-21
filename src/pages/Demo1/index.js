@@ -23,7 +23,7 @@ class Title extends Component {
 
 export default class Demo1 extends Component {
     constructor(props) {
-        console.log('构造函数')
+        console.log('constructor')
         super(props);
         this.state = {
             count: 1
@@ -32,7 +32,7 @@ export default class Demo1 extends Component {
     add() {
         this.setState({
             count: this.state.count +1
-        },()=>{console.log('执行完毕')})
+        },()=>{console.log('callback')})
     }
     chong(num = 5) {
         return (

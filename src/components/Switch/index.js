@@ -10,7 +10,9 @@ export default class Switch  extends Component {
     onChanges: React.PropTypes.func,
   }
   constructor(props) {
+
     super(props);
+    console.log(this.props)
     this.state = {
         coreWidth: 2,
         state: false,

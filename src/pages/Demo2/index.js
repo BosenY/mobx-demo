@@ -20,7 +20,6 @@ export default class Demo2 extends Component {
         }
     }
   componentWillMount() {
-    // console.log(this.props.CountStore)
     setTimeout(() => {
         this.setState({
             show: true
