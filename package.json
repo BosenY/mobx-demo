@@ -45,6 +45,8 @@
     "object-assign": "4.1.1",
     "postcss-flexbugs-fixes": "3.0.0",
     "postcss-pxtorem": "^4.0.1",
+    "preact": "^8.2.1",
+    "preact-compat": "^3.16.0",
     "promise": "7.1.1",
     "react": "^15.6.1",
     "react-dev-utils": "^3.0.2",
